@@ -1,0 +1,94 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{max-width: 1100px;margin: 0 auto;margin-top: 50px;}
+
+.logos{display: flex;justify-content: space-between;
+   
+}
+.logo-img{display: block;width: 100%;}
+.logos-item{width: 160px;
+    box-shadow: -2px 13px 19px -7px rgba(0,0,0,0.39);
+    -webkit-box-shadow: -2px 13px 19px -7px rgba(0,0,0,0.39);
+    -moz-box-shadow: -2px 13px 19px -7px rgba(0,0,0,0.39);
+}
+.title{ padding: 50px 0;}
+.title-title,.title-parrafo{
+    font-size: 2.2em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#242424;
+}
+.title-parrafo{
+    font-size: 1em;
+    color: #aeacac;
+    padding-top: 20px 
+}
+
+.servicios{display: flex;flex-wrap: wrap;}
+.servicios-box{
+    width: 50%;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 15px;
+}
+.servicios-item{
+    display: flex;
+    align-items: center;
+    margin-right: -60px;
+    position: relative;
+    z-index: 1;
+}
+.servicio-icon{
+    display: block;
+    width: 80px;
+}
+.servicios-texto{
+    max-width: 450px;
+    background: aquamarine;
+    padding: 25px;
+    padding-left: 45px;
+    border-radius: 6px;
+}
+.servicios-titulo{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: #242424;
+    padding-bottom: 15px;
+}
+.servicio-descripcion{color: #414141;}
+
+.color1{background: rgba(241, 179, 7, 0.164);}
+.color2{background: rgba(7, 175, 241, 0.103);}
+.color3{background: rgba(154, 14, 247, 0.103);}
+.color4{background: rgba(241, 7, 26, 0.103);}
+.color5{background: rgba(252, 121, 14, 0.103);}
+.color6{background: rgba(8, 224, 142, 0.103);}
+
+@media(max-width:767px){
+    .logos {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+     }
+    
+      .logos-item {
+        width: 200px;
+        margin-bottom: 40px;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width:667px){
+    .servicios-box {
+        width: 100%;
+        justify-content: center;
+    }
+    .servicios-item {     
+        margin-right: -65px;
+    }
+}
